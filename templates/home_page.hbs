@@ -85,32 +85,38 @@
 
     <section class="quick-answers">
       <h2><strong>Respostas</strong> rápidas</h2>
-      <button class="accordion">
-        <div class="accordion-title">
-          <p>Como posso configurar meu lorem ipsum?</p>
-          <hr>
+      <div class="box-accordion">
+        <button class="accordion">
+          <div class="accordion-title">
+            <p>Como posso configurar meu lorem ipsum?</p>
+            <hr>
+          </div>
+        </button>
+        <div class="panel">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque aut! Ut eos incidunt ipsam nemo, possimus voluptas veniam aliquam eaque repellendus assumenda est qui libero adipisci unde quas.</p>
         </div>
-      </button>
-      <div class="panel">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque aut! Ut eos incidunt ipsam nemo, possimus voluptas veniam aliquam eaque repellendus assumenda est qui libero adipisci unde quas.</p>
       </div>
-      <button class="accordion">
-        <div class="accordion-title">
-          <p>Como posso configurar meu lorem ipsum?</p>
-          <hr>
+      <div class="box-accordion">
+        <button class="accordion">
+          <div class="accordion-title">
+            <p>Como posso configurar meu lorem ipsum?</p>
+            <hr>
+          </div>
+        </button>
+        <div class="panel">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque aut! Ut eos incidunt ipsam nemo, possimus voluptas veniam aliquam eaque repellendus assumenda est qui libero adipisci unde quas.</p>
         </div>
-      </button>
-      <div class="panel">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque aut! Ut eos incidunt ipsam nemo, possimus voluptas veniam aliquam eaque repellendus assumenda est qui libero adipisci unde quas.</p>
       </div>
-      <button class="accordion">
-        <div class="accordion-title">
-          <p>Como posso configurar meu lorem ipsum?</p>
-          <hr>
+      <div class="box-accordion">
+        <button class="accordion">
+          <div class="accordion-title">
+            <p>Como posso configurar meu lorem ipsum?</p>
+            <hr>
+          </div>
+        </button>
+        <div class="panel">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque aut! Ut eos incidunt ipsam nemo, possimus voluptas veniam aliquam eaque repellendus assumenda est qui libero adipisci unde quas.</p>
         </div>
-      </button>
-      <div class="panel">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque aut! Ut eos incidunt ipsam nemo, possimus voluptas veniam aliquam eaque repellendus assumenda est qui libero adipisci unde quas.</p>
       </div>
     </section>
 
@@ -266,12 +272,11 @@
         panel.style.maxHeight = null;
         panel.style.border = "0";
         panel.style.borderTop = "0";
-        panel.style.marginBottom = "0";
+        panel.style.transition = "max-height 0.3s";
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
-        panel.style.border = "1px solid #C1C1C1";
         panel.style.borderTop = "none";
-        panel.style.marginBottom = "2.4rem";
+        panel.style.transition = "max-height 0.3s";
       }
     });
   }
