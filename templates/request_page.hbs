@@ -197,10 +197,12 @@
           {{/if}}
 
           {{#each custom_fields}}
-            <dt>{{title}}</dt>
-            <dd>
-              {{value}}
-            </dd>
+            {{#isnt value '—'}}
+              <dt>{{title}}</dt>
+              <dd>
+                {{value}}
+              </dd>
+            {{/isnt}}
           {{/each}}
         </dl>
 
