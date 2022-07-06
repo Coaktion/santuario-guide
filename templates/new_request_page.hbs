@@ -17,4 +17,10 @@
 </div>
 <script type="text/javascript">
 	document.querySelector('#request_custom_fields_6431926234267').value = 'canal-helpcenter';
+
+  document.addEventListener('click', e => {
+    if (e.target.parentElement?.parentElement?.parentElement.className.indexOf('searchbox-suggestions') > -1) {
+      e.target.setAttribute('target', '_blank');
+    }
+  });
 </script>
