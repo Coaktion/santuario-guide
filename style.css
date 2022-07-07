@@ -711,10 +711,19 @@ ul {
   border-bottom: 1px solid #ddd;
   display: block;
   padding-bottom: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .form .suggestion-list li {
   padding: 10px 0;
+  font-family: var(--lato);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.form .suggestion-list li a {
+  color: var(--secundary-color);
 }
 
 .form .suggestion-list li a:visited {
