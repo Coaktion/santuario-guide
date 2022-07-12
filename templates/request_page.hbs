@@ -198,10 +198,12 @@
 
           {{#each custom_fields}}
             {{#isnt value '—'}}
+            {{#isnt title 'Canal de Atendimento'}}
               <dt>{{title}}</dt>
               <dd>
                 {{value}}
               </dd>
+            {{/isnt}}
             {{/isnt}}
           {{/each}}
         </dl>
@@ -231,3 +233,13 @@
     </section>
   </div>
 </div>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.request-details dd').forEach(dd => {
+      if (dd.innerText.trim() === 'Não') {
+        dd.style.display = 'none';
+        dd.previousElementSibling.style.display = 'none';
+      }
+    });
+  });
+</script>
